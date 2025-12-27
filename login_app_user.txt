@@ -1,0 +1,5 @@
+mysql> DELETE FROM compte WHERE tittulaire = "Alice";
+ERROR 1142 (42000): DELETE command denied to user 'app_user'@'localhost' for table 'compte'
+
+mysql> DROP TABLE compte;
+ERROR 1142 (42000): DROP command denied to user 'app_user'@'localhost' for table 'compte'
